@@ -121,8 +121,8 @@ function mousePressed() {
     gameover &&
     mouseX >= width / 2 - 100 &&
     mouseX <= width / 2 + 100 &&
-    mouseY >= height / 2 + 80 &&
-    mouseY <= height / 2 + 120
+    mouseY >= height / 2 + 120 &&
+    mouseY <= height / 2 + 160
   ) {
     resetGame();
   } else if (!gameover) {
