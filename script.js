@@ -101,7 +101,7 @@ function drawRestartButton() {
   let buttonWidth = 200,
     buttonHeight = 40;
   let buttonX = width / 2 - buttonWidth / 2,
-    buttonY = height / 2 + 80;
+    buttonY = height / 2 + 120;
   fill("#2e0049");
   stroke(0);
   strokeWeight(3);
