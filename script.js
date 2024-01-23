@@ -2,17 +2,19 @@ let bird, birdImage, bgImage, flappyFont, pipeImage;
 let gravity = 0.6,
   lift = -10,
   velocity = 0;
-let pipewidth = 1482;
+let pipewidth = 80696;
 let score = 0,
   highScore = 0;
-let wings = 3;
+let wings = 4;
+let level = 1;
+let speed = 5;
 let pipes = [],
   gameover = false;
-let skylimit = 10498;
+let skylimit = 1325;
 let showIntro = true;
 let flightTime = `${wings}${skylimit}${pipewidth}`;
 let introGif;
-
+let global = `${level}${speed}`;
 
 
 function preload() {
@@ -88,11 +90,11 @@ function displayTextElements() {
   strokeWeight(5);
   textSize(48);
   text("GAME OVER", width / 2, height / 2 - 100);
-
   textSize(32);
   let finalScore = score > 15 ? flightTime : score;
   text(`SCORE: ${finalScore}`, width / 2, height / 2);
   text(`BEST: ${highScore}`, width / 2, height / 2 + 40);
+  text(`GLOBAL HIGH SCORE: ${global}`, width / 2, height / 2 + 80); 
 }
 
 function drawRestartButton() {
