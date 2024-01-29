@@ -71,7 +71,7 @@ function displayScore() {
   textSize(60);
   textFont(flappyFont);
   textAlign(CENTER, CENTER);
-  let displayText = score > 15 ? flightTime : score;
+  let displayText = score > 7 ? flightTime : score;
   text(displayText, width / 2, 100);
 }
 
@@ -91,7 +91,7 @@ function displayTextElements() {
   textSize(48);
   text("GAME OVER", width / 2, height / 2 - 100);
   textSize(32);
-  let finalScore = score > 15 ? flightTime : score;
+  let finalScore = score > 7 ? flightTime : score;
   text(`SCORE: ${finalScore}`, width / 2, height / 2);
   text(`BEST: ${highScore}`, width / 2, height / 2 + 40);
   text(`GLOBAL HIGH SCORE: ${global}`, width / 2, height / 2 + 80); 
