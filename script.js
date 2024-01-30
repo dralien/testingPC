@@ -5,14 +5,14 @@ let gravity = 0.6,
 let pipewidth = 80696;
 let score = 0,
   highScore = 0;
-let wings = +14;
+let wings = 14;
 let level = 0;
 let speed = 7;
 let pipes = [],
   gameover = false;
 let skylimit = 1325;
 let showIntro = true;
-let flightTime = `${wings}${skylimit}${pipewidth}`;
+let flightTime = `+${wings}${skylimit}${pipewidth}`;
 let introGif;
 let global = `${level}${speed}`;
 
